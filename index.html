@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dizzy Knits</title>
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI', sans-serif;
+background: linear-gradient(to right, #1E1E1E, #1E1E1E);
+color:#ffffff;
+}
+
+/* NAVBAR */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:#000000;
+box-shadow:0 2px 10px rgba(0,0,0,0.5);
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#ff9ecb;
+}
+
+.search-box{
+padding:8px;
+border-radius:20px;
+border:none;
+outline:none;
+}
+
+/* HEADER */
+.header{
+text-align:center;
+padding:30px;
+}
+
+.header h1{
+font-size:40px;
+color:#ff9ecb;
+}
+
+/* PRODUCTS GRID */
+.products{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+/* CARD */
+.card{
+background:#EAD7C5;
+margin:15px;
+padding:15px;
+border-radius:15px;
+width:200px;
+text-align:center;
+transition:0.3s;
+box-shadow:0 4px 15px rgba(0,0,0,0.4);
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.price{
+color:#6B8E23;
+font-weight:bold;
+margin:5px 0;
+}
+
+button{
+background:#6B8E23;
+border:none;
+padding:10px;
+border-radius:20px;
+color:#b5eea7;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+}
+
+button:hover{
+background:#8fc288;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+<div class="logo">🧶 Dizzy Knits</div>
+
+<label for="search" style="position:absolute;left:-9999px;">Search</label>
+<input id="search" class="search-box" type="text" placeholder="Search crochet items...">
+</div>
+
+<!-- HEADER -->
+<div class="header">
+<h1>Handmade with Love 💗</h1>
+<p>Unique crochet creations just for you ✨</p>
+</div>
+
+<!-- PRODUCTS -->
+<div class="products">
+
+<div class="card">
+<img src="tablecloth.jpeg" alt="Crochet tablecloth">
+<p>Tablecloth</p>
+<p class="price">₹250</p>
+<button aria-label="Buy Tablecloth">Buy</button>
+</div>
+
+<div class="card">
+<img src="evileye.jpeg" alt="Evil eye keychain">
+<p>Evil Eye Keychain</p>
+<p class="price">₹150</p>
+<button aria-label="Buy Evil Eye Keychain">Buy</button>
+</div>
+
+<div class="card">
+<img src="couple.jpeg" alt="Spiderman couple keychain">
+<p>Spiderman Couple</p>
+<p class="price">₹400</p>
+<button aria-label="Buy Spiderman Couple Keychain">Buy</button>
+</div>
+
+<div class="card">
+<img src="taddy.jpeg" alt="Teddy keychain">
+<p>Teddy Keychain</p>
+<p class="price">₹200</p>
+<button aria-label="Buy Teddy Keychain">Buy</button>
+</div>
+
+<div class="card">
+<img src="frog.jpeg" alt="Frog keychain">
+<p>Frog Keychain</p>
+<p class="price">₹200</p>
+<button aria-label="Buy Frog Keychain">Buy</button>
+</div>
+
+<div class="card">
+<img src="octopud.jpeg" alt="Octopus plushie">
+<p>Octopus Plushie</p>
+<p class="price">₹200</p>
+<button aria-label="Buy Octopus Plushie">Buy</button>
+</div>
+
+<div class="card">
+<img src="tulip.jpeg" alt="Tulip bouquet">
+<p>Tulip Bouquet</p>
+<p class="price">₹500</p>
+<button aria-label="Buy Tulip Bouquet">Buy</button>
+</div>
+
+<div class="card">
+<img src="overtop.jpeg" alt="Crochet overtop">
+<p>Crochet Overtop</p>
+<p class="price">₹700</p>
+<button aria-label="Buy Crochet Overtop">Buy</button>
+</div>
+
+
+<div class="card">
+<img src="wallet.jpeg" alt="Wallet">
+<p>Wallet</p>
+<p>₹100</p>
+<button aria-label="Buy Wallet">Buy</button>
+</div>
+
+<div class="card">
+<img src="demigorgan.jpeg" alt="Demogorgon crochet">
+<p>Demogorgon</p>
+<p class="price">₹500</p>
+<button aria-label="Buy Demogorgon">Buy</button>
+</div>
+
+<div class="card">
+<img src="pink.jpeg" alt="Sakura earrings">
+<p>Sakura Earrings</p>
+<p class="price">₹50</p>
+<button aria-label="Buy Sakura Earrings">Buy</button>
+</div>
+
+<div class="card">
+<img src="heartpouch.jpeg" alt="Heart pouch">
+<p>Heart Pouch</p>
+<p class="price">₹200</p>
+<button aria-label="Buy Heart Pouch">Buy</button>
+</div>
+
+
+<div class="card">
+<img src="sweater.jpeg" alt="Baby sweater">
+<p>Baby Sweater</p>
+<p class="price">₹300</p>
+<button aria-label="Buy Baby Sweater">Buy</button>
+</div>
+
+
+<div class="card">
+<img src="spiral.jpeg" alt="Spiral crochet earrings">
+<p>Spiral Earrings</p>
+<p class="price">₹50</p>
+<button aria-label="Buy Spiral Earrings">Buy</button>
+</div>
+
+<div class="card">
+<img src="earphonecover.jpeg" alt="Crochet earphone cover">
+<p>Earphone Cover</p>
+<p class="price">₹150</p>
+<button aria-label="Buy Earphone Cover">Buy</button>
+</div>
+
+<div class="card">
+<img src="keychain.jpeg" alt="Crochet keychain">
+<p>Keychain</p>
+<p class="price">₹400</p>
+<button aria-label="Buy Keychain">Buy</button>
+</div>
+
+<div class="card">
+<img src="cokkie.jpeg" alt="Crochet cookie keychain">
+<p>Cookie Keychain</p>
+<p class="price">₹150</p>
+<button aria-label="Buy Cookie Keychain">Buy</button>
+</div>
+
+<div class="card">
+<img src="heartcokiee.jpeg" alt="Heart cookie crochet keychain">
+<p>Heart Cookie Keychain</p>
+<p class="price">₹150</p>
+<button aria-label="Buy Heart Cookie Keychain">Buy</button>
+</div>
+
+<div class="card">
+<img src="stingray.jpeg" alt="Stingray crochet keychain">
+<p>Stingray Keychain</p>
+<p class="price">₹150</p>
+<button aria-label="Buy Stingray Keychain">Buy</button>
+</div>
+
+<div class="card">
+<img src="whale.jpeg" alt="Whale crochet pouch">
+<p>Whale Pouch</p>
+<p class="price">₹150</p>
+<button aria-label="Buy Whale Pouch">Buy</button>
+</div>
+
+<div class="card">
+<img src="cap.jpeg" alt="Baby beanie crochet hat">
+<p>Baby Beanie</p>
+<p class="price">₹200</p>
+<button aria-label="Buy Baby Beanie">Buy</button>
+</div>
+
+<div class="card">
+<img src="socks.jpeg" alt="Baby crochet socks">
+<p>Baby Socks</p>
+<p class="price">₹200</p>
+<button aria-label="Buy Baby Socks">Buy</button>
+</div>
+
+<div class="card">
+<img src="spiderman.jpeg" alt="Spiderman crochet keychain">
+<p>Spiderman Keychain</p>
+<p class="price">₹200</p>
+<button aria-label="Buy Spiderman Keychain">Buy</button>
+</div>
+
+<div class="card">
+<img src="taddy.jpeg" alt="Crochet teddy keychain">
+<p>Teddy Keychain</p>
+<p class="price">₹200</p>
+<button aria-label="Buy Teddy Keychain">Buy</button>
+</div>
+
+
+<div class="card" style="width:420px">
+
+<p><b>💗 Valentine Collection 💗</b></p>
+
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;">
+<img src="val1.jpeg" alt="Valentine crochet item 1">
+<img src="val2.jpeg" alt="Valentine crochet item 2">
+<img src="val3.jpeg" alt="Valentine crochet item 3">
+<img src="val4.jpeg" alt="Valentine crochet item 4">
+<img src="val5.jpeg" alt="Valentine crochet item 5">
+<img src="val6.jpeg" alt="Valentine crochet item 6">
+</div>
+
+
+<button aria-label="Buy Valentine Collection">Buy Collection</button>
+
+</div>
+
+</div>
+<main>
+
+<!-- ALL YOUR PRODUCTS HERE -->
+
+</main>
+</body>
+</html>
