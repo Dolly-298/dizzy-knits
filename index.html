@@ -73,6 +73,7 @@ justify-content:center;
 
 /* CARD */
 .card{
+display:inline-block;
 background:#EAD7C5;
 margin:15px;
 padding:15px;
@@ -361,6 +362,20 @@ background:#250e0a;
 
 </main>
 <script>
+document.getElementById("search").addEventListener("keyup", function(){
+  let value = this.value.toLowerCase();
+  let cards = document.querySelectorAll(".card");
+
+  cards.forEach(function(card){
+    let text = card.querySelector("p").innerText.toLowerCase();
+
+    if(text.includes(value)){
+      card.style.display = "inline-block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
 
 // FONT SIZE
 let size = 16;
@@ -386,7 +401,13 @@ function startVoice(){
   recognition.lang = "en-IN";
 
   recognition.onresult = function(event){
-    document.getElementById("search").value = event.results[0][0].transcript;
+    let text = event.results[0][0].transcript;
+    let searchInput = document.getElementById("search");
+
+    searchInput.value = text;
+
+   
+    searchInput.dispatchEvent(new Event("keyup"));
   };
 
   recognition.start();
