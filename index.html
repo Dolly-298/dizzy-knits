@@ -24,8 +24,6 @@ outline:3px solid #ff9ecb;
 }
   
 body{
-  <a href="#main" class="skip-link">Skip to main content</a>
-  <div id="sr-announce" aria-live="polite" style="position:absolute;left:-9999px;"></div>
 margin:0;
 font-family:'Segoe UI', sans-serif;
 background: linear-gradient(to right, #1E1E1E, #1E1E1E);
@@ -121,7 +119,8 @@ background:#250e0a;
 </head>
 
 <body>
-
+<a href="#main" class="skip-link">Skip to main content</a>
+<div id="sr-announce" aria-live="polite" style="position:absolute;left:-9999px;"></div>
 <!-- NAVBAR -->
 <div class="navbar">
 <div class="logo">🧶 Dizzy Knits</div>
@@ -131,11 +130,6 @@ background:#250e0a;
 <button onclick="startVoice()">🎤</button>
 </div>
 
-<div style="text-align:center; margin:10px;">
-<button onclick="increaseFont()">A+</button>
-<button onclick="decreaseFont()">A-</button>
-<button onclick="toggleContrast()">High Contrast</button>
-</div>
 
 <!-- HEADER -->
 <div class="header">
@@ -150,15 +144,15 @@ background:#250e0a;
 <img src="tablecloth.jpeg" alt="Crochet tablecloth">
 <p>Tablecloth</p>
 <p class="price">₹250</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Crochet tablecloth costs 250 rupees)">🔊</button>
 <button aria-label="Buy Tablecloth">Buy</button>
 </div>
 
-<div class="card" role="region" aria-label="Product item"><div class="card">
+<div class="card" role="region" aria-label="Product item">
 <img src="evileye.jpeg" alt="Evil eye keychain">
 <p>Evil Eye Keychain</p>
 <p class="price">₹150</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Evil Eye keychain costs 150 rupees')">🔊</button>
 <button aria-label="Buy Evil Eye Keychain">Buy</button>
 </div>
 
@@ -166,7 +160,7 @@ background:#250e0a;
 <img src="couple.jpeg" alt="Spiderman couple keychain">
 <p>Spiderman Couple</p>
 <p class="price">₹400</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Spiderman couple keychain costs 400 rupees')">🔊</button>
 <button aria-label="Buy Spiderman Couple Keychain">Buy</button>
 </div>
 
@@ -182,7 +176,7 @@ background:#250e0a;
 <img src="frog.jpeg" alt="Frog keychain">
 <p>Frog Keychain</p>
 <p class="price">₹200</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Frog keychain costs 200 rupees')">🔊</button>
 <button aria-label="Buy Frog Keychain">Buy</button>
 </div>
 
@@ -190,7 +184,7 @@ background:#250e0a;
 <img src="octopud.jpeg" alt="Octopus plushie">
 <p>Octopus Plushie</p>
 <p class="price">₹200</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Octopus Plushie costs 200 rupees')">🔊</button>
 <button aria-label="Buy Octopus Plushie">Buy</button>
 </div>
 
@@ -198,7 +192,7 @@ background:#250e0a;
 <img src="tulip.jpeg" alt="Tulip bouquet">
 <p>Tulip Bouquet</p>
 <p class="price">₹500</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Tulip Bouquet costs 500 rupees')">🔊</button>
 <button aria-label="Buy Tulip Bouquet">Buy</button>
 </div>
 
@@ -206,7 +200,7 @@ background:#250e0a;
 <img src="overtop.jpeg" alt="Crochet overtop">
 <p>Crochet Overtop</p>
 <p class="price">₹700</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Crochet Overtop costs 700 rupees')">🔊</button>
 <button aria-label="Buy Crochet Overtop">Buy</button>
 </div>
 
@@ -215,7 +209,7 @@ background:#250e0a;
 <img src="wallet.jpeg" alt="Wallet">
 <p>Wallet</p>
 <p class="price">₹100</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Wallet costs 100 rupees')">🔊</button>
 <button aria-label="Buy Wallet">Buy</button>
 </div>
   
@@ -223,7 +217,7 @@ background:#250e0a;
 <img src="demigorgan.jpeg" alt="Demogorgon crochet">
 <p>Demogorgon</p>
 <p class="price">₹500</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Demogorgon costs 500 rupees')">🔊</button>
 <button aria-label="Buy Demogorgon">Buy</button>
 </div>
 
@@ -231,20 +225,20 @@ background:#250e0a;
 <img src="pink.jpeg" alt="Sakura earrings">
 <p>Sakura Earrings</p>
 <p class="price">₹50</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Sakura Earrings costs 50 rupees')">🔊</button>
 <button aria-label="Buy Sakura Earrings">Buy</button>
 </div>
 
-<div class="card">
+<div class="card" role="region" aria-label="Product item">
 <img src="heartpouch.jpeg" alt="Heart pouch">
 <p>Heart Pouch</p>
 <p class="price">₹200</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Heart Pouch costs 200 rupees')">🔊</button>
 <button aria-label="Buy Heart Pouch">Buy</button>
 </div>
 
 
-<div class="card">
+<div class="card" role="region" aria-label="Product item">
 <img src="sweater.jpeg" alt="Baby sweater">
 <p>Baby Sweater</p>
 <p class="price">₹300</p>
@@ -253,43 +247,43 @@ background:#250e0a;
 </div>
 
 
-<div class="card">
+<div class="card" role="region" aria-label="Product item">
 <img src="spiral.jpeg" alt="Spiral crochet earrings">
 <p>Spiral Earrings</p>
 <p class="price">₹50</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Spiral Earrings costs 50 rupees')">🔊</button>
 <button aria-label="Buy Spiral Earrings">Buy</button>
 </div>
 
-<div class="card">
+<div class="card" role="region" aria-label="Product item">
 <img src="earphonecover.jpeg" alt="Crochet earphone cover">
 <p>Earphone Cover</p>
 <p class="price">₹150</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Earphone Cover costs 150 rupees')">🔊</button>
 <button aria-label="Buy Earphone Cover">Buy</button>
 </div>
 
-<div class="card">
+<div class="card" role="region" aria-label="Product item">
 <img src="keychain.jpeg" alt="Crochet keychain">
 <p>Keychain</p>
 <p class="price">₹400</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('keychain costs 400 rupees')">🔊</button>
 <button aria-label="Buy Keychain">Buy</button>
 </div>
 
-<div class="card">
+<div class="card" role="region" aria-label="Product item">
 <img src="cokkie.jpeg" alt="Crochet cookie keychain">
 <p>Cookie Keychain</p>
 <p class="price">₹150</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Cookie keychain costs 150 rupees')">🔊</button>
 <button aria-label="Buy Cookie Keychain">Buy</button>
 </div>
 
-<div class="card">
+<div class="card" role="region" aria-label="Product item">
 <img src="heartcokiee.jpeg" alt="Heart cookie crochet keychain">
 <p>Heart Cookie Keychain</p>
 <p class="price">₹150</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Cookie with a Heart keychain costs 150 rupees')">🔊</button>
 <button aria-label="Buy Heart Cookie Keychain">Buy</button>
 </div>
 
@@ -297,7 +291,7 @@ background:#250e0a;
 <img src="stingray.jpeg" alt="Stingray crochet keychain">
 <p>Stingray Keychain</p>
 <p class="price">₹150</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Stingray keychain costs 150 rupees')">🔊</button>
 <button aria-label="Buy Stingray Keychain">Buy</button>
 </div>
 
@@ -305,7 +299,7 @@ background:#250e0a;
 <img src="whale.jpeg" alt="Whale crochet pouch">
 <p>Whale Pouch</p>
 <p class="price">₹150</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Whale Pouch costs 150 rupees')">🔊</button>
 <button aria-label="Buy Whale Pouch">Buy</button>
 </div>
 
@@ -313,7 +307,7 @@ background:#250e0a;
 <img src="cap.jpeg" alt="Baby beanie crochet hat">
 <p>Baby Beanie</p>
 <p class="price">₹200</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Baby Beanie costs 200 rupees')">🔊</button>
 <button aria-label="Buy Baby Beanie">Buy</button>
 </div>
   
@@ -321,7 +315,7 @@ background:#250e0a;
 <img src="socks.jpeg" alt="Baby crochet socks">
 <p>Baby Socks</p>
 <p class="price">₹200</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Baby Socks costs 200 rupees')">🔊</button>
 <button aria-label="Buy Baby Socks">Buy</button>
 </div>
 
@@ -329,20 +323,20 @@ background:#250e0a;
 <img src="spiderman.jpeg" alt="Spiderman crochet keychain">
 <p>Spiderman Keychain</p>
 <p class="price">₹200</p>
-<button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
+<button onclick="speak('Spiderman costs 200 rupees')">🔊</button>
 <button aria-label="Buy Spiderman Keychain">Buy</button>
 </div>
 
 <div class="card" role="region" aria-label="Product item">
-<img src="taddy.jpeg" alt="Crochet teddy keychain">
-<p>Teddy Keychain</p>
+<img src="chubbyteddy.jpeg" alt="Crochet teddy">
+<p>Teddy</p>
 <p class="price">₹200</p>
 <button onclick="speak('Teddy keychain costs 200 rupees')">🔊</button>
 <button aria-label="Buy Teddy Keychain">Buy</button>
 </div>
 
 
-<div class="card" style="width:420px">
+<div class="card" role="region" aria-label="Product item" style="width:420px">
 
 <p><b>💗 Valentine Collection 💗</b></p>
 
@@ -355,7 +349,7 @@ background:#250e0a;
 <img src="val6.jpeg" alt="Valentine crochet item 6">
 </div>
 
-
+<button onclick="speak(' Valentine Collection')">🔊</button>
 <button aria-label="Buy Valentine Collection">Buy Collection</button>
 
 </div>
@@ -373,12 +367,12 @@ let size = 16;
 
 function increaseFont(){
   size += 2;
-  document.body.style.fontSize = size + "px";
+  document.body.style.zoom = size / 16;
 }
 
 function decreaseFont(){
   size -= 2;
-  document.body.style.fontSize = size + "px";
+  document.body.style.zoom = size / 16;
 }
 
 // HIGH CONTRAST
